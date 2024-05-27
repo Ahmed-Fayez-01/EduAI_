@@ -1,0 +1,56 @@
+class AssetData {
+  static const logo="assets/images/logo.svg";
+  static const logout="assets/images/logout.svg";
+
+  //NavBar Icons
+  static const home="assets/images/home.svg";
+  static const calender="assets/images/calender.svg";
+  static const chat="assets/images/chat.svg";
+  static const user="assets/images/user.svg";
+  //Home Icons
+  static const email="assets/images/mail.svg";
+  static const google="assets/images/google.svg";
+  static const apple="assets/images/apple.svg";
+  static const face="assets/images/face.svg";
+  static const password="assets/images/password.svg";
+  static const view="assets/images/view.svg";
+  static const viewOff="assets/images/view-off.svg";
+  static const book="assets/images/book.svg";
+  static const menu="assets/images/menu.svg";
+  static const bell="assets/images/bell.svg";
+  static const comment="assets/images/comment.svg";
+  static const event="assets/images/event.svg";
+  static const history="assets/images/history.svg";
+  static const back="assets/images/back.svg";
+  static const material="assets/images/material.svg";
+  static const homework="assets/images/homework.svg";
+  static const right="assets/images/rigth.svg";
+  static const left="assets/images/left.svg";
+  static const present="assets/images/present.svg";
+  static const absent="assets/images/absent.svg";
+  static const selectedUser="assets/images/selected_user.svg";
+  static const selectedCalender="assets/images/selected_calendar.svg";
+  static const selectedChat="assets/images/selected_chat.svg";
+  static const selectedHome="assets/images/selected_home.svg";
+  static const add="assets/images/add.svg";
+  static const camera="assets/images/camera.svg";
+  static const uploadImage="assets/images/upload_image.svg";
+  static const send="assets/images/send.svg";
+  static const close="assets/images/close.svg";
+  static const checkAttendance="assets/images/check_attendance.svg";
+  static const addHomework="assets/images/add_homework.svg";
+  static const addLesson="assets/images/add_lesson.svg";
+  static const save="assets/images/save.svg";
+  static const description="assets/images/description.svg";
+  static const upload="assets/images/upload.svg";
+  static const date="assets/images/date.svg";
+  static const fees="assets/images/fees.svg";
+  static const news="assets/images/news.svg";
+  static const clock="assets/images/clock.svg";
+  static const bookList="assets/images/book_list.svg";
+  static const download="assets/images/download.svg";
+  static const play="assets/images/play.svg";
+  static const mic="assets/images/mic.svg";
+  static const micRun="assets/images/mic_run.svg";
+  static const delete="assets/images/delete.svg";
+}
