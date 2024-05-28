@@ -1,6 +1,7 @@
 import 'package:eduai_parent/features/chat/presentation/views/chat_view.dart';
 import 'package:eduai_parent/features/home/presentation/views/home_view.dart';
 import 'package:eduai_parent/features/main_layout/presentation/views/widgets/bottom_nav_bar.dart';
+import 'package:eduai_parent/features/news/presentation/views/news_view.dart';
 import 'package:eduai_parent/features/reports/presentation/views/report_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +19,7 @@ class MainLayoutView extends StatelessWidget {
    const ScheduleView(),
     const ChatView(),
    const ReportView(),
-   const SizedBox(),
+   const NewsView(),
   ];
 
   @override

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:eduai_parent/features/profile/presentation/views/view_models/upload_image_profile/upload_image_profile_cubit.dart';
+import 'package:eduai_parent/features/son_profile/presentation/view_models/select_son/select_son_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -38,6 +39,7 @@ class EduAiTeacher extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => ChangeNavBarStatusCubit()),
         BlocProvider(create: (context) => ScheduleTabsCubit()),
+        BlocProvider(create: (context) => SelectSonCubit()),
         BlocProvider(create: (context) => UploadImageProfileCubit()),
       ],
       child: MaterialApp.router(

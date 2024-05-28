@@ -53,4 +53,13 @@ class AssetData {
   static const mic="assets/images/mic.svg";
   static const micRun="assets/images/mic_run.svg";
   static const delete="assets/images/delete.svg";
+  static const drop="assets/images/drop.svg";
+  static const acheive="assets/images/acheive.png";
+  static const cup="assets/images/cup.svg";
+  static const cancel="assets/images/cancel.svg";
+  static const plus="assets/images/plus.svg";
+  static const male="assets/images/male.svg";
+  static const female="assets/images/female.svg";
+  static const sendComment="assets/images/send_comment.svg";
+  static const favourite="assets/images/favourite.svg";
 }
