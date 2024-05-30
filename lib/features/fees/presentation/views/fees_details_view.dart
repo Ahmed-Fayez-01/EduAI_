@@ -1,13 +1,13 @@
-import 'package:eduai_parent/features/reports/presentation/views/widgets/report_view_body.dart';
+import 'package:eduai_parent/features/fees/presentation/views/widgets/fees_details_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ReportView extends StatelessWidget {
-  const ReportView({super.key});
+class FeesDetailsView extends StatelessWidget {
+  const FeesDetailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(0.0), // here the desired height
         child: AppBar(
@@ -20,7 +20,7 @@ class ReportView extends StatelessWidget {
           ),
         ),
       ),
-      body: const ReportViewBody(),
+      body: const FeesDetailsViewBody(),
     );
   }
 }

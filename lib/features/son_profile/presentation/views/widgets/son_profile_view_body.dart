@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:eduai_parent/core/shared_widgets/main_title_item.dart';
 import 'package:eduai_parent/core/utils/assets/assets.dart';
 import 'package:eduai_parent/core/utils/constants.dart';
+import 'package:eduai_parent/features/reports/presentation/views/report_view.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/daily_plans_view.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/widgets/daily_plan_item.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/widgets/coming_event_item.dart';
@@ -202,7 +203,9 @@ class SonProfileViewBody extends StatelessWidget {
                     horizontal: AppConstants.width20(context),
                   ),
                   child: DefaultButton(
-                    onPress: () {},
+                    onPress: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const ReportView()));
+                    },
                     text: "View Reports",
                     height: AppConstants.height15(context),
                     textColor: AppColors.primaryColor,

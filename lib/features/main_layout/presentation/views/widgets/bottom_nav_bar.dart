@@ -15,16 +15,16 @@ class BottomNavBar extends StatelessWidget {
     List<String> icons = [
       AssetData.home,
       AssetData.calender,
-      AssetData.chat,
-      AssetData.fees,
-      AssetData.news,
+      AssetData.editProfile,
+      AssetData.grades,
+      AssetData.bus,
     ];
     List<String> titles = [
       "Home",
       "Schedule",
-      "Chat",
-      "Fees",
-      "News",
+      "Students",
+      "Grades",
+      "Bus",
     ];
     return Material(
       elevation: 30,

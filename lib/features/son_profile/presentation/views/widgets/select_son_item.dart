@@ -6,8 +6,8 @@ import '../../../../../core/utils/assets/assets.dart';
 import '../../../../../core/utils/constants.dart';
 
 class SelectSonItem extends StatelessWidget {
-  const SelectSonItem({super.key});
-
+  const SelectSonItem({super.key, this.withBack=false});
+  final bool? withBack;
   @override
   Widget build(BuildContext context) {
     return   InkWell(
@@ -20,6 +20,7 @@ class SelectSonItem extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            if(withBack!)
             PositionedDirectional(
                 start: 0,
                 child: InkWell(

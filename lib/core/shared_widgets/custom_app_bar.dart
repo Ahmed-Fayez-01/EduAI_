@@ -25,23 +25,22 @@ class CustomAppBar extends StatelessWidget {
         children: [
           if(prefixIcon!=null)
           PositionedDirectional(start: 0,child: InkWell(onTap: prefixIconTap,child: SvgPicture.asset(prefixIcon!,width: MediaQuery.of(context).size.height*.06,))),
-          Expanded(
-              child: SizedBox(
-                height: MediaQuery.of(context).size.height*.06,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      title,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: MediaQuery.of(context).size.height * .02,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
+          SizedBox(
+            height: MediaQuery.of(context).size.height*.06,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.height * .02,
+                      fontWeight: FontWeight.w600),
                 ),
-              )),
+              ],
+            ),
+          ),
           if(suffixIcon!=null&&!hasTitleNotIcon!)
             PositionedDirectional(end: 0,child: InkWell(onTap: suffixIconTap,child: SvgPicture.asset(suffixIcon!,width: suffixIconSize ?? MediaQuery.of(context).size.height*.06,))),
           if(hasTitleNotIcon!)

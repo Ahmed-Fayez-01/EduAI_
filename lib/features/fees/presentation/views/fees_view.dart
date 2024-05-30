@@ -1,9 +1,9 @@
-import 'package:eduai_parent/features/reports/presentation/views/widgets/report_view_body.dart';
+import 'package:eduai_parent/features/fees/presentation/views/widgets/fees_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class ReportView extends StatelessWidget {
-  const ReportView({super.key});
+class FeesView extends StatelessWidget {
+  const FeesView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class ReportView extends StatelessWidget {
           ),
         ),
       ),
-      body: const ReportViewBody(),
+      body: const FeesViewBody(),
     );
   }
 }

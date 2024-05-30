@@ -3,6 +3,7 @@ import 'package:eduai_parent/features/home/presentation/views/home_view.dart';
 import 'package:eduai_parent/features/main_layout/presentation/views/widgets/bottom_nav_bar.dart';
 import 'package:eduai_parent/features/news/presentation/views/news_view.dart';
 import 'package:eduai_parent/features/reports/presentation/views/report_view.dart';
+import 'package:eduai_parent/features/son_profile/presentation/views/son_profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,9 +18,9 @@ class MainLayoutView extends StatelessWidget {
   List<Widget> screens = [
    const HomeView(),
    const ScheduleView(),
-    const ChatView(),
-   const ReportView(),
-   const NewsView(),
+    const SonProfileView(),
+   const SizedBox(),
+   const SizedBox(),
   ];
 
   @override

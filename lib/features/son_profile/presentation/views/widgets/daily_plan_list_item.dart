@@ -26,7 +26,7 @@ class _DailyPlanListItemState extends State<DailyPlanListItem> {
               left: BorderSide(color: AppColors.primaryColor, width: 6),)
         ),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
               child: Column(
@@ -38,28 +38,6 @@ class _DailyPlanListItemState extends State<DailyPlanListItem> {
                         fontSize: MediaQuery.of(context).size.height * .014,
                         fontWeight: FontWeight.w500,
                         color: const Color(0xff041631)),
-                  ),
-                  SizedBox(
-                    height: AppConstants.height5(context),
-                  ),
-                  Text(
-                    "Correct : 9 Questions",
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height * .012,
-                        fontWeight: FontWeight.w500,
-                        color: const Color(0xff00B505)),
-                  ),
-                  SizedBox(
-                    height: AppConstants.height5(context),
-                  ),
-                  Text(
-                    "Wrong : 1 Question",
-                    maxLines: 3,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height * .012,
-                        fontWeight: FontWeight.w500,
-                        color: const Color(0xffFF2C20)),
                   ),
                 ],
               ),

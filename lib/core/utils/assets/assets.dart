@@ -62,4 +62,18 @@ class AssetData {
   static const female="assets/images/female.svg";
   static const sendComment="assets/images/send_comment.svg";
   static const favourite="assets/images/favourite.svg";
+  static const setting="assets/images/setting.svg";
+  static const info="assets/images/info.svg";
+  static const feedback="assets/images/feedback.svg";
+  static const editProfile="assets/images/edit_profile.svg";
+  static const bus="assets/images/bus.svg";
+  static const grades="assets/images/grades.svg";
+  static const wallet="assets/images/wallet.svg";
+  static const money="assets/images/money.svg";
+  static const creditCard="assets/images/credit_card.svg";
+  static const vodafone="assets/images/vodafone.svg";
+  static const cardModel="assets/images/card_model.png";
+  static const helpCircle="assets/images/help-circle.svg";
+  static const confirmReciet="assets/images/confirm_recipet.svg";
+  // static const fawry="assets/images/fawry.svg";
 }

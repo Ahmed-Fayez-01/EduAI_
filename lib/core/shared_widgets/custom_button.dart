@@ -12,13 +12,14 @@ class DefaultButton extends StatelessWidget {
   String? fontFamily;
   Color? backgroundColor;
   Color? textColor;
+  Color? borderColor;
   Color? surfaceTintColor;
   Color? shadowColor;
   bool hasBorder;
   double? elevation;
 
   DefaultButton({
-    Key? key,
+    super.key,
     required this.onPress,
     required this.text,
     this.icon,
@@ -26,13 +27,14 @@ class DefaultButton extends StatelessWidget {
     this.height,
     this.fontFamily,
     this.fontSize,
+    this.borderColor,
     this.backgroundColor,
     this.textColor,
     this.hasBorder = false,
     this.elevation,
     this.shadowColor,
     this.surfaceTintColor
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +49,7 @@ class DefaultButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(
               borderRadius ?? 0,
             ),
-            side: BorderSide(color: hasBorder ? AppColors.primaryColor: Colors.transparent)
+            side: BorderSide(color: hasBorder ? borderColor??AppColors.primaryColor: Colors.transparent)
           )),
       onPressed: onPress,
       child: Row(
