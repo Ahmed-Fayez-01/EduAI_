@@ -77,5 +77,19 @@ class AssetData {
   static const mapDetails="assets/images/map_details.svg";
   static const lineLocation="assets/images/line_location.svg";
   static const confirmReciet="assets/images/confirm_recipet.svg";
+  static const menuInfo="assets/images/menu_info.svg";
+  static const menuLang="assets/images/menu_lang.svg";
+  static const menuMode="assets/images/menu_mode.svg";
+  static const menuNotification="assets/images/menu_notification.svg";
+  static const menuPrivacy="assets/images/menu_privacy.svg";
+  static const menuRate="assets/images/menu_rate.svg";
+  static const menuSupport="assets/images/menu_support.svg";
+  static const menuTerms="assets/images/menu_terms.svg";
+  static const menuUpdate="assets/images/menu_update.svg";
+  static const suggetion="assets/images/suggetion.svg";
+  static const report="assets/images/report.svg";
+  static const copy="assets/images/copy.svg";
+  static const userName="assets/images/user_name.svg";
+  static const nationalId="assets/images/national_id.svg";
   // static const fawry="assets/images/fawry.svg";
 }

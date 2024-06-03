@@ -17,7 +17,9 @@ class NewsViewBody extends StatelessWidget {
         SizedBox(
           height: AppConstants.height10(context),
         ),
-        CustomAppBar(prefixIcon: AssetData.menu, title: "News",suffixIcon: AssetData.bell,suffixIconTap: (){
+        CustomAppBar(prefixIcon: AssetData.back,prefixIconTap: (){
+          Navigator.pop(context);
+        }, title: "News",suffixIcon: AssetData.bell,suffixIconTap: (){
           Navigator.push(context, MaterialPageRoute(builder: (context)=>const NotificationView()));
         },),
         SizedBox(

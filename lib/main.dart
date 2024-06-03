@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:eduai_parent/features/grades/presentation/view_models/select_time_type/setect_time_type_cubit.dart';
-import 'package:eduai_parent/features/profile/presentation/views/view_models/upload_image_profile/upload_image_profile_cubit.dart';
 import 'package:eduai_parent/features/son_profile/presentation/view_models/select_son/select_son_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,6 +11,7 @@ import 'core/utils/services/local_services/cache_helper.dart';
 import 'core/utils/services/remote_services/service_locator.dart';
 import 'core/utils/theme/app_theme.dart';
 import 'features/main_layout/presentation/view_model/change_nav_bar_status/change_nav_bar_status_cubit.dart';
+import 'features/menu/presentation/view_models/upload_image_profile/upload_image_profile_cubit.dart';
 import 'features/schedules/presentation/view_models/change_tabs_cubit/schedule_tabs_cubit.dart';
 
 
@@ -45,7 +45,7 @@ class EduAiTeacher extends StatelessWidget {
         BlocProvider(create: (context) => UploadImageProfileCubit()),
       ],
       child: MaterialApp.router(
-        title: "EduAI Teacher",
+        title: "EduAI Parent",
         theme: themeDataLight,
         builder: (context, child) {
           return MediaQuery(

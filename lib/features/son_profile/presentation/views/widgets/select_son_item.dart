@@ -22,7 +22,9 @@ class SelectSonItem extends StatelessWidget {
           children: [
             if(withBack!)
             InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: SvgPicture.asset(
                   AssetData.back,
                   width: MediaQuery.of(context).size.height * .06,

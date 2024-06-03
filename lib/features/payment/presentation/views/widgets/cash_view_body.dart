@@ -68,6 +68,7 @@ class _CashViewBodyState extends State<CashViewBody> {
                       contentPaddingVertical: AppConstants.height20(context),
                       fillColor: Colors.transparent,
                       maxLines: 1,
+                      readOnly: true,
                       style: TextStyle(
                           color: const Color(0xff041631),
                           fontWeight: FontWeight.w600,
@@ -96,6 +97,7 @@ class _CashViewBodyState extends State<CashViewBody> {
                       contentPaddingVertical: AppConstants.height20(context),
                       fillColor: Colors.transparent,
                       maxLines: 1,
+                      readOnly: true,
                       style: TextStyle(
                           color: const Color(0xff041631),
                           fontWeight: FontWeight.w600,
@@ -124,6 +126,7 @@ class _CashViewBodyState extends State<CashViewBody> {
                       contentPaddingVertical: AppConstants.height20(context),
                       fillColor: Colors.transparent,
                       maxLines: 1,
+                      readOnly: true,
                       style: TextStyle(
                           color: const Color(0xff041631),
                           fontWeight: FontWeight.w600,
@@ -152,6 +155,7 @@ class _CashViewBodyState extends State<CashViewBody> {
                       contentPaddingVertical: AppConstants.height20(context),
                       fillColor: Colors.transparent,
                       maxLines: 1,
+                      readOnly: true,
                       style: TextStyle(
                           color: const Color(0xff041631),
                           fontWeight: FontWeight.w600,

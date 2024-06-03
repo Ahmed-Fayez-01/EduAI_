@@ -1,4 +1,9 @@
 import 'package:eduai_parent/features/fees/presentation/views/fees_view.dart';
+import 'package:eduai_parent/features/menu/presentation/views/edit_profile_view.dart';
+import 'package:eduai_parent/features/menu/presentation/views/feedback_view.dart';
+import 'package:eduai_parent/features/menu/presentation/views/information_view.dart';
+import 'package:eduai_parent/features/menu/presentation/views/setting_view.dart';
+import 'package:eduai_parent/features/menu/presentation/views/students_info_view.dart';
 import 'package:eduai_parent/features/menu/presentation/views/widgets/menu_item.dart';
 import 'package:eduai_parent/features/news/presentation/views/news_view.dart';
 import 'package:flutter/material.dart';
@@ -26,8 +31,12 @@ class MenuViewBody extends StatelessWidget {
         ),
          Row(
           children: [
-            const MenuItem(title: "Edit Profile", icon: AssetData.editProfile),
-            const MenuItem(title: "Settings", icon: AssetData.setting),
+            MenuItem(title: "Edit Profile", icon: AssetData.editProfile,onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const EditProfileView()));
+            },),
+            MenuItem(title: "Settings", icon: AssetData.setting,onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SettingView()));
+            },),
             MenuItem(title: "Fees", icon: AssetData.fees,onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const FeesView()));
             },),
@@ -36,19 +45,25 @@ class MenuViewBody extends StatelessWidget {
         SizedBox(height: AppConstants.height20(context),),
          Row(
           children: [
-            const MenuItem(title: "Feedback", icon: AssetData.feedback),
-            const MenuItem(title: "Information", icon: AssetData.info),
+            MenuItem(title: "Feedback", icon: AssetData.feedback,onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const FeedbackView()));
+            },),
+            MenuItem(title: "Information", icon: AssetData.info,onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const InformationView()));
+            },),
             MenuItem(title: "News", icon: AssetData.news,onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const NewsView()));
             },),
           ],
         ),
         SizedBox(height: AppConstants.height20(context),),
-        const Row(
+        Row(
           children: [
-            MenuItem(title: "Student Info", icon: AssetData.editProfile),
-            MenuItem(title: "Logout", icon: AssetData.logout),
-            Expanded(child: SizedBox()),
+            MenuItem(title: "Student Info", icon: AssetData.editProfile,onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const StudentsInfoView()));
+            },),
+            const MenuItem(title: "Logout", icon: AssetData.logout),
+            const Expanded(child: SizedBox()),
           ],
         ),
       ],

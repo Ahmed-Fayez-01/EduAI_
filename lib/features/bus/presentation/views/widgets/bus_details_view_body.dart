@@ -32,7 +32,7 @@ class BusDetailsViewBody extends StatelessWidget {
           prefixIconTap: () {
             Navigator.pop(context);
           },
-          title: "Rode Details",
+          title: "Road Details",
         ),
         SizedBox(
           height: AppConstants.height20(context),

@@ -8,17 +8,17 @@ import '../../../../../core/shared_widgets/custom_app_bar.dart';
 import '../../../../../core/shared_widgets/default_text_form_field.dart';
 import '../../../../../core/utils/assets/assets.dart';
 import '../../../../../core/utils/constants.dart';
+import '../../view_models/upload_image_profile/upload_image_profile_cubit.dart';
 import '../language_view.dart';
-import '../view_models/upload_image_profile/upload_image_profile_cubit.dart';
 
-class ProfileViewBody extends StatefulWidget {
-  const ProfileViewBody({super.key});
+class EditProfileViewBody extends StatefulWidget {
+  const EditProfileViewBody({super.key});
 
   @override
-  State<ProfileViewBody> createState() => _ProfileViewBodyState();
+  State<EditProfileViewBody> createState() => _EditProfileViewBodyState();
 }
 
-class _ProfileViewBodyState extends State<ProfileViewBody> {
+class _EditProfileViewBodyState extends State<EditProfileViewBody> {
   var name=TextEditingController();
   var email=TextEditingController();
   var phone=TextEditingController();
@@ -38,7 +38,9 @@ class _ProfileViewBodyState extends State<ProfileViewBody> {
           SizedBox(
             height: AppConstants.height20(context),
           ),
-          CustomAppBar( title: "Edit Profile",subTitle: "Save",onTitleTap: (){},hasTitleNotIcon: true,),
+          CustomAppBar( title: "Edit Profile",subTitle: "Save",prefixIcon:AssetData.back,prefixIconTap: (){
+            Navigator.pop(context);
+          },onTitleTap: (){},hasTitleNotIcon: true,),
           SizedBox(height: AppConstants.height20(context),),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: AppConstants.width20(context)),
