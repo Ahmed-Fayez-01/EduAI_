@@ -74,6 +74,8 @@ class AssetData {
   static const vodafone="assets/images/vodafone.svg";
   static const cardModel="assets/images/card_model.png";
   static const helpCircle="assets/images/help-circle.svg";
+  static const mapDetails="assets/images/map_details.svg";
+  static const lineLocation="assets/images/line_location.svg";
   static const confirmReciet="assets/images/confirm_recipet.svg";
   // static const fawry="assets/images/fawry.svg";
 }

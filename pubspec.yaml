@@ -61,6 +61,9 @@ dependencies:
   audioplayers:
   audio_waveforms: ^1.0.5
   dotted_border: ^2.1.0
+  google_maps_flutter: ^2.0.6
+  dotted_line: ^3.2.2
+  timeline_tile: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

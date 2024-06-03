@@ -21,14 +21,12 @@ class SelectSonItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if(withBack!)
-            PositionedDirectional(
-                start: 0,
-                child: InkWell(
-                    onTap: () {},
-                    child: SvgPicture.asset(
-                      AssetData.back,
-                      width: MediaQuery.of(context).size.height * .06,
-                    ))),
+            InkWell(
+                onTap: () {},
+                child: SvgPicture.asset(
+                  AssetData.back,
+                  width: MediaQuery.of(context).size.height * .06,
+                )),
             SizedBox(width: AppConstants.width10(context),),
             Expanded(
               child: Column(
@@ -54,14 +52,12 @@ class SelectSonItem extends StatelessWidget {
                 ],
               ),
             ),
-            PositionedDirectional(
-                end: 0,
-                child: InkWell(
-                    onTap: () {},
-                    child: SvgPicture.asset(
-                      AssetData.bell,
-                      width: MediaQuery.of(context).size.height * .06,
-                    ))),
+            InkWell(
+                onTap: () {},
+                child: SvgPicture.asset(
+                  AssetData.bell,
+                  width: MediaQuery.of(context).size.height * .06,
+                )),
           ],
         ),
       ),

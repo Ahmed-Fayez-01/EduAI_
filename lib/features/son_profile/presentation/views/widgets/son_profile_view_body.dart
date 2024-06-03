@@ -1,18 +1,14 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:eduai_parent/core/shared_widgets/main_title_item.dart';
-import 'package:eduai_parent/core/utils/assets/assets.dart';
 import 'package:eduai_parent/core/utils/constants.dart';
 import 'package:eduai_parent/features/reports/presentation/views/report_view.dart';
-import 'package:eduai_parent/features/son_profile/presentation/views/daily_plans_view.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/widgets/daily_plan_item.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/widgets/coming_event_item.dart';
 import 'package:eduai_parent/features/son_profile/presentation/views/widgets/select_son_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../../../../core/shared_widgets/custom_button.dart';
-import '../../../../../core/shared_widgets/custom_dropdown_formfield.dart';
 import '../../../../../core/utils/colors/colors.dart';
 import 'academic_progress_item.dart';
 

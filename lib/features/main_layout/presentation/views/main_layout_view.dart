@@ -1,3 +1,4 @@
+import 'package:eduai_parent/features/bus/presentation/views/bus_view.dart';
 import 'package:eduai_parent/features/chat/presentation/views/chat_view.dart';
 import 'package:eduai_parent/features/home/presentation/views/home_view.dart';
 import 'package:eduai_parent/features/main_layout/presentation/views/widgets/bottom_nav_bar.dart';
@@ -9,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/shared_widgets/exit_alert.dart';
+import '../../../grades/presentation/views/grades_view.dart';
 import '../../../schedules/presentation/views/schedule_view.dart';
 import '../view_model/change_nav_bar_status/change_nav_bar_status_cubit.dart';
 
@@ -19,8 +21,8 @@ class MainLayoutView extends StatelessWidget {
    const HomeView(),
    const ScheduleView(),
     const SonProfileView(),
-   const SizedBox(),
-   const SizedBox(),
+   const GradesView(),
+   const BusView(),
   ];
 
   @override
